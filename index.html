@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeeshan's Micro-Learning Hub | C# & Lead Generation</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #2563eb;
+            --bg-color: #f8fafc;
+            --text-color: #334155;
+            --card-bg: #ffffff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.3rem;
+        }
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .module-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+            border-left: 4px solid var(--accent-color);
+        }
+        .module-card:hover {
+            transform: translateY(-5px);
+        }
+        .module-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        .module-card p {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zeeshan's Tech & Learning Hub</h1>
+        <p>Master C# Programming, Office Automation & B2B Lead Generation</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">College 24 Modules & Notes</h2>
+        <div class="modules-grid" id="modulesContainer">
+            <!-- Dynamic Modules will appear here -->
+            <div class="module-card">
+                <h3>Module 1: Introduction to MS PowerPoint & Presentation Skills</h3>
+                <p>Learn professional slide designing, animations, and structured presentation layouts.</p>
+                <a href="#" class="btn">Read Notes</a>
+            </div>
+            <div class="module-card">
+                <h3>Module 2: InPage Urdu Typography & Formatting</h3>
+                <p>Complete guide on Urdu typing, nastaleeq fonts layout, and document composing.</p>
+                <a href="#" class="btn">Read Notes</a>
+            </div>
+            <div class="module-card">
+                <h3>Module 3: C# Basics & Windows Forms Intro</h3>
+                <p>Setting up Visual Studio, understanding syntax, and building first interactive forms.</p>
+                <a href="#" class="btn">Read Notes</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">B2B Lead Generation Guides</h2>
+        <div class="modules-grid">
+            <div class="module-card">
+                <h3>Guide 1: Finding Prospects on LinkedIn</h3>
+                <p>Using filters, Sales Navigator basics, and clean data extraction techniques.</p>
+                <a href="#" class="btn">Read Guide</a>
+            </div>
+            <div class="module-card">
+                <h3>Guide 2: Email Verification & Apollo.io</h3>
+                <p>Verifying corporate emails and building accurate verified lead lists.</p>
+                <a href="#" class="btn">Read Guide</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Zeeshan Nasir. Designed for Students & Learners.</p>
+    </footer>
+
+</body>
+</html>
