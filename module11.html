@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 11: Install and Configure Network Devices - Zeeshan's Tech Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background-color: #0b132b;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1d3557;
+            border-bottom: 2px solid #457b9d;
+            padding-bottom: 6px;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        h3 {
+            color: #457b9d;
+            margin-top: 25px;
+            font-size: 17px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #444;
+        }
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #1d3557;
+            color: white;
+        }
+        code {
+            background-color: #e2e8f0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 15px;
+            background-color: #457b9d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .back-btn:hover {
+            background-color: #1d3557;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0b132b;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zeeshan's Tech & Learning Hub</h1>
+        <p>Vocational Training Institute - Computer Operator & IT Assistant Course</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Back to Home / Modules</a>
+
+        <h2>Module 11: Install and Configure Network Devices</h2>
+        <p><strong>Learning Outcomes:</strong> After completion of this learning module, learners will be able to install and connect network devices, configure IP classes and addresses, set up dynamic routing protocols (RIP, OSPF, EIGRP, BGP), bridge WLAN with LAN, manage duplex settings, and perform network maintenance, troubleshooting, and IP scanning[cite: 8].</p>
+
+        <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
+
+        <h3>Learning Unit 1: Install and Connect Network Devices</h3>
+        <ul>
+            <li><strong>Network Types & Topologies:</strong> PAN, LAN, MAN, WAN, and WLAN[cite: 8]. Topologies include Bus, Star, Ring, Mesh, Tree, and Hybrid[cite: 8].</li>
+            <li><strong>Network Media:</strong> Coaxial cables (RG-59, RG-6), Twisted Pair (UTP/STP), and Fiber Optic cables (Single-mode for long distance, Multi-mode for short distance)[cite: 8].</li>
+            <li><strong>Device Placement:</strong> Position routers centrally and elevated; use switches to expand wired ports using Ethernet links[cite: 8].</li>
+        </ul>
+
+        <h3>Learning Unit 2: Configure IP Addresses of Hosts and Intermediary Devices</h3>
+        <ul>
+            <li><strong>IP Address Classes:</strong>
+                <ul>
+                    <li><strong>Class A:</strong> Range <code>1.0.0.0 – 126.255.255.255</code> (Default Subnet: <code>255.0.0.0</code>)[cite: 8]. Loopback: <code>127.0.0.1</code>[cite: 8].</li>
+                    <li><strong>Class B:</strong> Range <code>128.0.0.0 – 191.255.255.255</code> (Default Subnet: <code>255.255.0.0</code>)[cite: 8].</li>
+                    <li><strong>Class C:</strong> Range <code>192.0.0.0 – 223.255.255.255</code> (Default Subnet: <code>255.255.255.0</code>)[cite: 8].</li>
+                    <li><strong>Class D:</strong> Range <code>224.0.0.0 – 239.255.255.255</code> (Multicast)[cite: 8].</li>
+                    <li><strong>Class E:</strong> Range <code>240.0.0.0 – 255.255.255.255</code> (Experimental)[cite: 8].</li>
+                </ul>
+            </li>
+            <li><strong>Allocation Methods:</strong> Static IP (manual setup for servers/printers) vs. Dynamic IP (automatic via DHCP servers)[cite: 8].</li>
+        </ul>
+
+        <h3>Learning Unit 3: Configure Dynamic Routing Protocols</h3>
+        <ul>
+            <li><strong>Routing Protocols Overview:</strong> Automatically adjust paths using algorithms[cite: 8]. Divided into IGPs (Interior Gateway Protocols like RIP, OSPF, EIGRP) and EGPs (Exterior Gateway Protocols like BGP)[cite: 8].</li>
+            <li><strong>Protocol Configurations:</strong>
+                <ul>
+                    <li><strong>RIP (Routing Information Protocol):</strong> Distance-vector protocol using hop counts (max 15 hops); configure via <code>router rip</code> and <code>version 2</code>[cite: 8].</li>
+                    <li><strong>OSPF (Open Shortest Path First):</strong> Link-state protocol using cost metrics and Area 0 backbone; configure via <code>router ospf 1</code> and wildcard masks[cite: 8].</li>
+                    <li><strong>EIGRP (Enhanced Interior Gateway Routing Protocol):</strong> Hybrid protocol using DUAL algorithm; configure via <code>router eigrp [AS-number]</code>[cite: 8].</li>
+                    <li><strong>BGP (Border Gateway Protocol):</strong> Inter-AS routing protocol requiring manual neighbor mapping via <code>neighbor [IP] remote-as [AS]</code>[cite: 8].</li>
+                </ul>
+            </li>
+            <li><strong>Convergence:</strong> The state where all routers synchronize on best paths after a topology change (OSPF/EIGRP converge fast; RIP/BGP converge slower)[cite: 8].</li>
+        </ul>
+
+        <h3>Learning Unit 4: Perform Maintenance & Troubleshooting</h3>
+        <ul>
+            <li><strong>Diagnostic Tools:</strong> <code>ping</code> (tests reachability and RTT), <code>tracert</code> / <code>traceroute</code> (tracks packet hops), <code>ipconfig</code> / <code>ifconfig</code>, <code>nslookup</code> (DNS checks), and <code>netstat</code>[cite: 8].</li>
+            <li><strong>Duplex Settings:</strong> Half-duplex (one direction at a time, prone to collisions) vs. Full-duplex (simultaneous transmission, no collisions). Auto-negotiation prevents duplex mismatch issues[cite: 8].</li>
+            <li><strong>Common Problems:</strong> IP address conflicts, DNS resolution failures, and physical hardware malfunctions[cite: 8].</li>
+            <li><strong>WLAN Bridging & AP Setup:</strong> Configuring Access Point / Bridge modes, disabling secondary DHCP servers, and avoiding channel interference[cite: 8].</li>
+            <li><strong>IP Scanning Tools:</strong> Using tools like Nmap, Angry IP Scanner, Advanced IP Scanner, and Fing to discover active devices, open ports, and map subnets[cite: 8].</li>
+        </ul>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Zeeshan Nasir. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
