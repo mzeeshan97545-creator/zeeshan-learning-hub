@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 7: Manage Email using Outlook - Zeeshan's Tech Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background-color: #0b132b;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1d3557;
+            border-bottom: 2px solid #457b9d;
+            padding-bottom: 6px;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        h3 {
+            color: #457b9d;
+            margin-top: 25px;
+            font-size: 17px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #444;
+        }
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #1d3557;
+            color: white;
+        }
+        code {
+            background-color: #e2e8f0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 15px;
+            background-color: #457b9d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .back-btn:hover {
+            background-color: #1d3557;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0b132b;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zeeshan's Tech & Learning Hub</h1>
+        <p>Vocational Training Institute - Computer Operator & IT Assistant Course</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Back to Home / Modules</a>
+
+        <h2>Module 07: Manage Email using Outlook</h2>
+        <p><strong>Learning Outcomes:</strong> After completion of this learning module, learners will be able to create and configure email accounts on MS Outlook, apply security and digital encryption, manage rules and spam, and execute email backup and restoration[cite: 11].</p>
+
+        <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
+
+        <h3>Learning Unit 1: Configure Email Account</h3>
+        <p><strong>Email:</strong> Stands for electronic mail. Used to send electronic messages over the internet using unique email addresses[cite: 11]. Accessed either via web browsers or desktop applications like Microsoft Outlook[cite: 11].</p>
+
+        <h4>Configuring Email in MS Outlook 2016:</h4>
+        <ul>
+            <li><strong>Auto Account Setup:</strong> Enter your Name, Email Address, and Password on the welcome screen for automatic server detection[cite: 11].</li>
+            <li><strong>Manual Setup (POP3 / IMAP):</strong> If auto-setup fails, select manual setup and configure server settings[cite: 11].
+                <ul>
+                    <li>Incoming Server Port: <code>995</code> for POP3 or <code>993</code> for IMAP (with SSL enabled)[cite: 11].</li>
+                    <li>Outgoing Server (SMTP) Port: <code>465</code> (with SSL enabled and SMTP Authentication required)[cite: 11].</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Outlook Interface Components:</h4>
+        <ul>
+            <li><strong>Navigation Pane / Mail / Calendar / People / Tasks:</strong> Manage emails, schedule meetings, maintain contact lists, and track to-do lists[cite: 11].</li>
+            <li><strong>Reading Pane & Folder Pane:</strong> Customize layouts (Right, Bottom, Off) and manage custom folder hierarchies[cite: 11].</li>
+            <li><strong>Global Address List:</strong> Access directory contacts quickly by typing a name and pressing <code>Ctrl + K</code>[cite: 11].</li>
+            <li><strong>Signatures:</strong> Create custom signatures for new messages and replies via <code>Signatures and Stationery</code>[cite: 11].</li>
+        </ul>
+
+        <h3>Learning Unit 2: Apply Security and Encryption</h3>
+        <ul>
+            <li><strong>Junk Email Filters:</strong> Automatically sort, move, or block spam by configuring rules via <code>Home &gt; Rules &gt; Manage Rules & Alerts</code>[cite: 11].</li>
+            <li><strong>Not Junk:</strong> Recover legitimate emails from the Junk folder by selecting <strong>Junk &gt; Not Junk</strong> to move them to the inbox and whitelist the sender[cite: 11].</li>
+            <li><strong>Digital Signatures:</strong> Ensure authenticity and integrity of outgoing messages[cite: 11]. Create self-signed certificates using <code>SelfCert.exe</code> located in the Office root folder (e.g., Office16) and enable signing in the Outlook Trust Center[cite: 11].</li>
+        </ul>
+
+        <h3>Learning Unit 3: Backup and Restore Mails</h3>
+        <p>Outlook allows you to backup and archive emails into an Outlook Data File (<code>.pst</code>) for data security and migration[cite: 11].</p>
+        <ul>
+            <li><strong>Backing Up (Export):</strong> Go to <code>File &gt; Open & Export &gt; Import/Export &gt; Export to a file &gt; Outlook Data File (.pst)</code>, select folders, and choose a destination path[cite: 11]. Default archive location: <code>C:\Users\&lt;username&gt;\Documents\Outlook Files\archive.pst</code>[cite: 11].</li>
+            <li><strong>Restoring (Import):</strong> Use the Import/Export wizard selecting <code>Import from another program or file</code> to restore data from a <code>.pst</code> file back into Outlook[cite: 11].</li>
+        </ul>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Zeeshan Nasir. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
