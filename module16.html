@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 16: Managing Arrays and Lists - Zeeshan's Tech Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background-color: #0b132b;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1d3557;
+            border-bottom: 2px solid #457b9d;
+            padding-bottom: 6px;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        h3 {
+            color: #457b9d;
+            margin-top: 25px;
+            font-size: 17px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #444;
+        }
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #1d3557;
+            color: white;
+        }
+        code {
+            background-color: #e2e8f0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 15px;
+            background-color: #457b9d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .back-btn:hover {
+            background-color: #1d3557;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0b132b;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zeeshan's Tech & Learning Hub</h1>
+        <p>Vocational Training Institute - Computer Operator & IT Assistant Course</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Back to Home / Modules</a>
+
+        <h2>Module 16: Managing Arrays and Lists</h2>
+        <p><strong>Learning Outcomes:</strong> After completion of this learning module, learners will be able to declare, initialize, and manipulate 1-D and multi-dimensional arrays, use non-generic collections like <code>ArrayList</code> and <code>Hashtable</code>, and implement modern generic collections like <code>List&lt;T&gt;</code> and <code>Dictionary&lt;TKey, TValue&gt;</code> in C#[cite: 7].</p>
+
+        <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
+
+        <h3>Learning Unit 1: Utilizing Arrays in C# Program</h3>
+        <ul>
+            <li><strong>Arrays Overview:</strong> A collection of continuous memory locations storing elements of the same data type, accessed via zero-based indexing (from <code>0</code> to <code>size - 1</code>)[cite: 7].</li>
+            <li><strong>Initialization & Access:</strong> Arrays can be initialized at declaration (e.g., <code>string[] cars = {"Volvo", "BMW"};</code>) or later using the <code>new</code> keyword[cite: 7]. Elements are processed efficiently using <code>for</code> or <code>foreach</code> loops[cite: 7].</li>
+            <li><strong>Operations:</strong> Includes searching via <code>Array.IndexOf()</code>, sorting via <code>Array.Sort()</code>, updating elements by index, and handling multi-dimensional (2-D) matrices[cite: 7].</li>
+        </ul>
+
+        <h3>Learning Unit 2: Utilize Non-Generic Collections in C# Program</h3>
+        <ul>
+            <li><strong>Non-Generic Collections:</strong> Part of <code>System.Collections</code> namespace, storing items as type <code>Object</code> without compile-time type safety[cite: 7].</li>
+            <li><strong>ArrayList:</strong> Dynamically resizable list storing mixed data types, supporting <code>Add()</code>, <code>Remove()</code>, <code>RemoveAt()</code>, and <code>Clear()</code> methods[cite: 7].</li>
+            <li><strong>Hashtable:</strong> Stores key-value pairs using hash codes for rapid lookup via unique keys, iterated using <code>DictionaryEntry</code> inside <code>foreach</code> loops[cite: 7].</li>
+        </ul>
+
+        <h3>Learning Unit 3: Utilize Generic Collections in C# Program</h3>
+        <ul>
+            <li><strong>List&lt;T&gt;:</strong> A type-safe, generic collection part of <code>System.Collections.Generic</code> that supports dynamic resizing, sorting, indexing, and methods like <code>Add()</code>, <code>Insert()</code>, and <code>Remove()</code>[cite: 7].</li>
+            <li><strong>Dictionary&lt;TKey, TValue&gt;:</strong> Stores unique key-value pairs providing high-performance lookups, updates, and key-based removal, processed easily using <code>KeyValuePair&lt;TKey, TValue&gt;</code> loops[cite: 7].</li>
+        </ul>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Zeeshan Nasir. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
