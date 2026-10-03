@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 13: Get Started with C# - Zeeshan's Tech Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background-color: #0b132b;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1d3557;
+            border-bottom: 2px solid #457b9d;
+            padding-bottom: 6px;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        h3 {
+            color: #457b9d;
+            margin-top: 25px;
+            font-size: 17px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #444;
+        }
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #1d3557;
+            color: white;
+        }
+        code {
+            background-color: #e2e8f0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 15px;
+            background-color: #457b9d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .back-btn:hover {
+            background-color: #1d3557;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0b132b;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zeeshan's Tech & Learning Hub</h1>
+        <p>Vocational Training Institute - Computer Operator & IT Assistant Course</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Back to Home / Modules</a>
+
+        <h2>Module 13: Get Started with C#</h2>
+        <p><strong>Learning Outcomes:</strong> After completion of this learning module, learners will be able to download and install Visual Studio Community Edition, create C# projects, write basic programs, declare variables and constants, use operators, implement implicit and explicit type conversions, compile and run programs, and manage console I/O using format specifiers and string concatenation[cite: 8].</p>
+
+        <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
+
+        <h3>Learning Unit 1: Install Microsoft Visual Studio</h3>
+        <ul>
+            <li><strong>Visual Studio Community Edition:</strong> A free, full-featured IDE for individual developers, open-source projects, and education with complete support for C# and .NET[cite: 8].</li>
+            <li><strong>Installation Requirements:</strong> Windows 10/11 (64-bit), 1.8 GHz quad-core processor recommended, 4 GB RAM minimum (8 GB+ recommended), and an SSD with adequate space[cite: 8]. Select the <strong>.NET desktop development</strong> workload during installation[cite: 8].</li>
+            <li><strong>Key IDE Elements:</strong> Solution Explorer, Code Editor, Toolbox, Properties Window, Output Window, Error List, and Debug Toolbar[cite: 8].</li>
+        </ul>
+
+        <h3>Learning Unit 2: Utilize Primitive Data Types and Variables in Practice</h3>
+        <ul>
+            <li><strong>Project Types:</strong> Supports Console Applications, Windows Forms, WPF, ASP.NET Web Apps, Class Libraries, and Unit Test Projects[cite: 8].</li>
+            <li><strong>Basic Structure of a C# Program:</strong> Includes using directives (<code>using System;</code>), namespaces, classes, the entry point method (<code>static void Main(string[] args)</code>), and statements ending with a semicolon[cite: 8].</li>
+            <li><strong>Variables & Constants:</strong> Variables (e.g., <code>int age = 25;</code>) hold changing values[cite: 8]. Constants (e.g., <code>const double Pi = 3.14159;</code>) use the <code>const</code> keyword and cannot be modified after declaration[cite: 8].</li>
+            <li><strong>Operators:</strong> Arithmetic (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>), Comparison (<code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>), Logical (<code>&amp;&amp;</code>, <code>||</code>, <code>!</code>), Assignment (<code>=</code>, <code>+=</code>, <code>-=</code>), and Unary/Ternary operators[cite: 8].</li>
+            <li><strong>Type Conversions:</strong> 
+                <ul>
+                    <li><em>Implicit Conversion:</em> Automatically done by the compiler when safe (e.g., <code>int</code> to <code>double</code>)[cite: 8].</li>
+                    <li><em>Explicit Conversion (Casting):</em> Manually specified when precision loss or overflow might occur (e.g., <code>(int)myDouble</code>)[cite: 8].</li>
+                </ul>
+            </li>
+            <li><strong>Compilation & Execution:</strong> Compiling translates C# source code into Intermediate Language (IL), which is executed by the Common Language Runtime (CLR) via Visual Studio or the .NET CLI (<code>dotnet run</code>)[cite: 8].</li>
+        </ul>
+
+        <h3>Learning Unit 3: Interact with Console for I/O</h3>
+        <ul>
+            <li><strong>Console I/O Methods:</strong> <code>Console.Write()</code> prints text on the same line; <code>Console.WriteLine()</code> appends a newline; <code>Console.ReadLine()</code> reads user input as a string[cite: 8]. Input conversion is done using methods like <code>Convert.ToInt32()</code>[cite: 8].</li>
+            <li><strong>Format Specifiers:</strong> Control display formatting for numbers, currency (<code>C</code>), fixed-point decimals (<code>F2</code>), percentages (<code>P</code>), and dates using placeholders (e.g., <code>{0:C}</code> or string interpolation <code>{val:C}</code>)[cite: 8]. Alignment can be managed via field widths (e.g., <code>{0,-10}</code>)[cite: 8].</li>
+            <li><strong>String Concatenation:</strong> Combining strings using the <code>+</code> operator, string interpolation (<code>$"..."</code>), or utility methods like <code>String.Concat()</code> and <code>String.Join()</code>[cite: 8].</li>
+        </ul>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Zeeshan Nasir. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
