@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 10: Install and Configure Network Connections - Zeeshan's Tech Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background-color: #0b132b;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1d3557;
+            border-bottom: 2px solid #457b9d;
+            padding-bottom: 6px;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        h3 {
+            color: #457b9d;
+            margin-top: 25px;
+            font-size: 17px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #444;
+        }
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #1d3557;
+            color: white;
+        }
+        code {
+            background-color: #e2e8f0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 15px;
+            background-color: #457b9d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .back-btn:hover {
+            background-color: #1d3557;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0b132b;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zeeshan's Tech & Learning Hub</h1>
+        <p>Vocational Training Institute - Computer Operator & IT Assistant Course</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">&larr; Back to Home / Modules</a>
+
+        <h2>Module 10: Install and Configure Network Connections</h2>
+        <p><strong>Learning Outcomes:</strong> After completion of this learning module, learners will be able to select appropriate network cables (CAT5, CAT6, CAT7), differentiate between UTP and STP cables, prepare straight-through and crossover cables, perform network connectivity, configure wired and wireless NICs, and execute basic network troubleshooting using ping, traceroute, and cable testers[cite: 7].</p>
+
+        <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
+
+        <h3>Learning Unit 1: Prepare Network Cables</h3>
+        <ul>
+            <li><strong>Networks & Topologies:</strong> Interconnection of computers to share data and resources (LAN, WAN). Physical arrangements include Bus, Star, and Ring topologies[cite: 7].</li>
+            <li><strong>UTP vs. STP Cables:</strong> UTP (Unshielded Twisted Pair) is cost-effective and ideal for low-EMI environments like offices. STP (Shielded Twisted Pair) includes foil or braided shielding to protect against Electromagnetic Interference (EMI) and Radio Frequency Interference (RFI) in industrial settings[cite: 7].</li>
+            <li><strong>Cable Standards & Wiring:</strong> 
+                <ul>
+                    <li><strong>Straight-Through Cable:</strong> Both ends use the same standard (T-568A or T-568B). Used to connect dissimilar devices (e.g., PC to Switch/Router)[cite: 7].</li>
+                    <li><strong>Crossover Cable:</strong> One end uses T-568A and the other uses T-568B. Used to connect similar devices directly (e.g., PC to PC)[cite: 7].</li>
+                </ul>
+            </li>
+            <li><strong>Network Cable Categories:</strong> CAT5 (100 MHz, up to 100 Mbps), CAT5e (100 MHz, 1 Gbps), CAT6 (250 MHz, up to 10 Gbps at short distances), CAT6a (500 MHz, 10 Gbps up to 100m), CAT7/CAT7a (600–1000 MHz, shielded S/FTP for high-performance data centers)[cite: 7].</li>
+            <li><strong>Tools Required:</strong> Cable crimper, wire stripper, cable cutter, RJ-45 connectors, and cable tester[cite: 7].</li>
+        </ul>
+
+        <h3>Learning Unit 2: Perform Network Connectivity</h3>
+        <ul>
+            <li><strong>Network Interface Cards (NIC):</strong> Hardware components enabling network connection (Wired Ethernet, Wireless Wi-Fi, USB, and Fiber Optic NICs)[cite: 7].</li>
+            <li><strong>IP Configuration:</strong> Automatic configuration via DHCP or manual setup by entering a unique IP Address (e.g., <code>192.168.1.101</code>), Subnet Mask (<code>255.255.255.0</code>), and Default Gateway[cite: 7].</li>
+            <li><strong>Wireless LAN (WLAN):</strong> Adapters connect devices to wireless networks via radio waves using SSID and security keys/passwords[cite: 7].</li>
+            <li><strong>Diagnostic Commands:</strong> 
+                <ul>
+                    <li><code>ping [IP/Domain]</code>: Tests device reachability and measures latency via ICMP echo requests[cite: 7].</li>
+                    <li><code>tracert [IP/Domain]</code> (Windows) / <code>traceroute</code> (Linux/Mac): Traces the path (routers/hops) packets take to reach a destination[cite: 7].</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Learning Unit 3: Perform Basic Network Troubleshooting</h3>
+        <ul>
+            <li><strong>Cable Tester:</strong> Checks physical and electrical integrity, continuity testing, wiremap configuration, and fault detection (shorts, opens, miswires)[cite: 7].</li>
+            <li><strong>Identifying Faulty Cables:</strong> Use visual inspection (cuts, frayed wires, damaged RJ45 pins), test with another port/device, or use cable testers[cite: 7].</li>
+            <li><strong>Speed Test Tools:</strong> Use tools like Speedtest by Ookla, Fast.com, or Google PageSpeed Insights to measure Download speed, Upload speed, Ping/Latency, and Jitter[cite: 7].</li>
+        </ul>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Zeeshan Nasir. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
