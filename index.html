@@ -3,98 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeeshan's Micro-Learning Hub | C# & Lead Generation</title>
+    <title>Zeeshan's Tech & Learning Hub</title>
     <style>
-        :root {
-            --primary-color: #0f172a;
-            --accent-color: #2563eb;
-            --bg-color: #f8fafc;
-            --text-color: #334155;
-            --card-bg: #ffffff;
-        }
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
+            background-color: #f4f6f9;
+            color: #333;
         }
         header {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            padding: 2rem 1rem;
+            background-color: #0b132b;
+            color: white;
+            padding: 30px 20px;
             text-align: center;
         }
         header h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
+            margin: 0;
+            font-size: 28px;
         }
         header p {
+            margin: 10px 0 0;
+            font-size: 16px;
             color: #94a3b8;
-            font-size: 1.1rem;
         }
         .container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
         .section-title {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 0.3rem;
+            color: #1d3557;
+            font-size: 22px;
+            border-bottom: 2px solid #457b9d;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
         }
-        .modules-grid {
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
-        .module-card {
-            background-color: var(--card-bg);
-            padding: 1.5rem;
+        .card {
+            background: white;
+            padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease;
-            border-left: 4px solid var(--accent-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        .module-card:hover {
+        .card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
         }
-        .module-card h3 {
-            margin-bottom: 0.5rem;
-            color: var(--primary-color);
-        }
-        .module-card p {
-            font-size: 0.95rem;
-            color: #64748b;
-            margin-bottom: 1rem;
+        .card h3 {
+            color: #1d3557;
+            margin-top: 0;
+            font-size: 18px;
         }
         .btn {
             display: inline-block;
-            background-color: var(--accent-color);
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #1d3557;
             color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
+            text-align: center;
             text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 600;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
         }
         .btn:hover {
-            background-color: #1d4ed8;
+            background-color: #457b9d;
         }
         footer {
             text-align: center;
-            padding: 1.5rem;
-            background-color: var(--primary-color);
-            color: #94a3b8;
-            font-size: 0.9rem;
-            margin-top: 3rem;
+            padding: 20px;
+            background-color: #0b132b;
+            color: white;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -102,47 +93,275 @@
 
     <header>
         <h1>Zeeshan's Tech & Learning Hub</h1>
-        <p>Master C# Programming, Office Automation & B2B Lead Generation</p>
+        <p>Vocational Training Institute - Computer Operator & IT Assistant Course & Guides</p>
     </header>
 
     <div class="container">
-        <h2 class="section-title">College 24 Modules & Notes</h2>
-        <div class="modules-grid" id="modulesContainer">
-            <!-- Dynamic Modules will appear here -->
-            <div class="module-card">
-                <h3>Module 1: Introduction to MS PowerPoint & Presentation Skills</h3>
-                <p>Learn professional slide designing, animations, and structured presentation layouts.</p>
-                <a href="#" class="btn">Read Notes</a>
+        
+        <!-- SECTION 1: 24 Modules -->
+        <h2 class="section-title">Course Modules (1 to 24)</h2>
+        <div class="grid">
+            <!-- Module 1 -->
+            <div class="card">
+                <div>
+                    <h3>Module 1</h3>
+                    <p>Maintain Computer System</p>
+                </div>
+                <a href="module1.html" class="btn">Read Notes</a>
             </div>
-            <div class="module-card">
-                <h3>Module 2: InPage Urdu Typography & Formatting</h3>
-                <p>Complete guide on Urdu typing, nastaleeq fonts layout, and document composing.</p>
-                <a href="#" class="btn">Read Notes</a>
+
+            <!-- Module 2 -->
+            <div class="card">
+                <div>
+                    <h3>Module 2</h3>
+                    <p>Prepare MS Word Document</p>
+                </div>
+                <a href="module2.html" class="btn">Read Notes</a>
             </div>
-            <div class="module-card">
-                <h3>Module 3: C# Basics & Windows Forms Intro</h3>
-                <p>Setting up Visual Studio, understanding syntax, and building first interactive forms.</p>
-                <a href="#" class="btn">Read Notes</a>
+
+            <!-- Module 3 -->
+            <div class="card">
+                <div>
+                    <h3>Module 3</h3>
+                    <p>Prepare Spread Sheet</p>
+                </div>
+                <a href="module3.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="card">
+                <div>
+                    <h3>Module 4</h3>
+                    <p>Create Basic Database using MS Access</p>
+                </div>
+                <a href="module4.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="card">
+                <div>
+                    <h3>Module 5</h3>
+                    <p>Create Presentation in MS PowerPoint</p>
+                </div>
+                <a href="module5.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 6 -->
+            <div class="card">
+                <div>
+                    <h3>Module 6</h3>
+                    <p>Prepare InPage Document</p>
+                </div>
+                <a href="module6.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 7 -->
+            <div class="card">
+                <div>
+                    <h3>Module 7</h3>
+                    <p>Manage Email Using Outlook</p>
+                </div>
+                <a href="module7.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 8 -->
+            <div class="card">
+                <div>
+                    <h3>Module 8</h3>
+                    <p>Create Video Conference Using Teams</p>
+                </div>
+                <a href="module8.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 9 -->
+            <div class="card">
+                <div>
+                    <h3>Module 9</h3>
+                    <p>Browse Internet and Manage Emails</p>
+                </div>
+                <a href="module9.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 10 -->
+            <div class="card">
+                <div>
+                    <h3>Module 10</h3>
+                    <p>Install and Configure Network Connections</p>
+                </div>
+                <a href="module10.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 11 -->
+            <div class="card">
+                <div>
+                    <h3>Module 11</h3>
+                    <p>Install and Configure Network Devices</p>
+                </div>
+                <a href="module11.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 12 -->
+            <div class="card">
+                <div>
+                    <h3>Module 12</h3>
+                    <p>Install and Configure Network Utilities</p>
+                </div>
+                <a href="module12.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 13 -->
+            <div class="card">
+                <div>
+                    <h3>Module 13</h3>
+                    <p>Get Started with C#</p>
+                </div>
+                <a href="module13.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 14 -->
+            <div class="card">
+                <div>
+                    <h3>Module 14</h3>
+                    <p>Apply Operators & Expressions</p>
+                </div>
+                <a href="module14.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 15 -->
+            <div class="card">
+                <div>
+                    <h3>Module 15</h3>
+                    <p>Manage Flow Control using Conditional Statement & Loops</p>
+                </div>
+                <a href="module15.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 16 -->
+            <div class="card">
+                <div>
+                    <h3>Module 16</h3>
+                    <p>Managing Arrays and Lists</p>
+                </div>
+                <a href="module16.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 17 -->
+            <div class="card">
+                <div>
+                    <h3>Module 17</h3>
+                    <p>Implement Methods in OOP</p>
+                </div>
+                <a href="module17.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 18 -->
+            <div class="card">
+                <div>
+                    <h3>Module 18</h3>
+                    <p>Implement Adobe Illustrator Essentials Tools on Design</p>
+                </div>
+                <a href="module18.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 19 -->
+            <div class="card">
+                <div>
+                    <h3>Module 19</h3>
+                    <p>Implement Adobe Photoshop Essential Tools on Designs</p>
+                </div>
+                <a href="module19.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 20 -->
+            <div class="card">
+                <div>
+                    <h3>Module 20</h3>
+                    <p>How to Articles</p>
+                </div>
+                <a href="module20.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 21 -->
+            <div class="card">
+                <div>
+                    <h3>Module 21</h3>
+                    <p>Write Frequently Asked Questions (FAQs)</p>
+                </div>
+                <a href="module21.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 22 -->
+            <div class="card">
+                <div>
+                    <h3>Module 22</h3>
+                    <p>Create Instruction Manuals and Guides</p>
+                </div>
+                <a href="module22.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 23 -->
+            <div class="card">
+                <div>
+                    <h3>Module 23</h3>
+                    <p>Write the User Experience</p>
+                </div>
+                <a href="module23.html" class="btn">Read Notes</a>
+            </div>
+
+            <!-- Module 24 -->
+            <div class="card">
+                <div>
+                    <h3>Module 24</h3>
+                    <p>Maintain Internet Safety</p>
+                </div>
+                <a href="module24.html" class="btn">Read Notes</a>
             </div>
         </div>
 
-        <h2 class="section-title">B2B Lead Generation Guides</h2>
-        <div class="modules-grid">
-            <div class="module-card">
-                <h3>Guide 1: Finding Prospects on LinkedIn</h3>
-                <p>Using filters, Sales Navigator basics, and clean data extraction techniques.</p>
-                <a href="#" class="btn">Read Guide</a>
+        <!-- SECTION 2: B2B Lead Generation Guide -->
+        <h2 class="section-title">B2B Lead Generation Guide</h2>
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3>Guide 1</h3>
+                    <p>Finding Prospects on LinkedIn</p>
+                </div>
+                <a href="b2b-guide1.html" class="btn">Read Guide</a>
             </div>
-            <div class="module-card">
-                <h3>Guide 2: Email Verification & Apollo.io</h3>
-                <p>Verifying corporate emails and building accurate verified lead lists.</p>
-                <a href="#" class="btn">Read Guide</a>
+
+            <div class="card">
+                <div>
+                    <h3>Guide 2</h3>
+                    <p>Email Verification & Apollo.io and Contactout</p>
+                </div>
+                <a href="b2b-guide2.html" class="btn">Read Guide</a>
             </div>
         </div>
+
+        <!-- SECTION 3: Digital Marketing -->
+        <h2 class="section-title">Digital Marketing</h2>
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3>Guide 1</h3>
+                    <p>Meta Ads Guide</p>
+                </div>
+                <a href="meta-ads-guide.html" class="btn">Read Guide</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Guide 2</h3>
+                    <p>Digital Marketing</p>
+                </div>
+                <a href="digital-marketing.html" class="btn">Read Guide</a>
+            </div>
+        </div>
+
     </div>
 
     <footer>
-        <p>&copy; 2026 Zeeshan Nasir. Designed for Students & Learners.</p>
+        <p>&copy; 2026 Zeeshan Nasir. All Rights Reserved.</p>
     </footer>
 
 </body>
